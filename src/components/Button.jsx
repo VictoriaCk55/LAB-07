@@ -1,17 +1,16 @@
-import {useState} from "react";
+import { useState } from "react";
 
-export const Button = props => {
+export const Button = (props) => {
     const { text } = props;
-    const [count, setCount] = useState(0);
 
-    function handlerButton(){
-        setCount(count + 5);// Incrementa de 5 en 5
+    function handlerButton() {
+        const randomValue = Math.floor(Math.random() * 100) + 1; 
+        alert(randomValue);
     }
 
-    return(
+    return (
         <button onClick={handlerButton}>
-            { text }{ count }
+            {text}
         </button>
     );
-
-}
+};
