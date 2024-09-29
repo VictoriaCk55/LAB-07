@@ -1,15 +1,14 @@
+import React from 'react';
+import CompWithProps from './components/CompWithProps';
 import './App.css';
-import { Button } from './components/Button';
-import RandomComponent from './components/RandomComponent';
 
 function App() {
-    return (
-        <>
-            <h1>NOEMI VICTORIA CKACKA VARGAS</h1>
-            <Button text="Click me!" />
-            <RandomComponent />
-        </>
-    );
+  return (
+    <div className="App">
+      <h1>hola desde Vite soy Victoria</h1>
+      <CompWithProps />
+    </div>
+  );
 }
 
 export default App;
